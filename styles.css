@@ -5,8 +5,6 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
@@ -57,4 +55,23 @@ button:hover {
 
 #results {
     margin-top: 20px;
+}
+
+.options {
+    display: flex;
+    font-size: 17px;
+    gap: 20px;
+    padding: 10px;
+}
+
+.translation {
+    opacity: 50%;
+    padding-left: 25px;
+}
+
+.translation:before {
+    content: "(";
+}
+.translation:after {
+    content: ")";
 }
