@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Genius Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Working Genius Assessment</h1>
+    <form id="assessment-form">
+        <div class="question">
+            <label>1. I often come up with innovative ideas and solutions.</label>
+            <input type="number" name="q1" min="1" max="5" required>
+        </div>
+        <div class="question">
+            <label>2. I have a talent for inspiring and motivating others.</label>
+            <input type="number" name="q2" min="1" max="5" required>
+        </div>
+        <!-- Add all other questions in the same format here -->
+        <div class="question">
+            <label>30. I take pride in optimizing and improving work processes.</label>
+            <input type="number" name="q30" min="1" max="5" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="results" class="hidden">
+        <h2>Results</h2>
+        <p id="geniuses"></p>
+        <p id="frustrations"></p>
+        <p id="competencies"></p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
